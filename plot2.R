@@ -2,9 +2,6 @@ library(data.table)
 library(lubridate)
 library(dplyr)
 
-#change directory to the data folder
-setwd("/media/NewVolume/Coursera/JHUDataScienceSpecialization/04_ExploratoryAnalysis/ExData_Plotting1/")
-
 #The following descriptions of the 9 variables in the dataset are taken from the UCI web site:
 #  
 # Date: Date in format dd/mm/yyyy
@@ -33,7 +30,6 @@ hpc <- cbind(hpc, "DateTime"=dt)
 hpc <- hpc[hpc$DateTime >= as.POSIXct('2007-02-01 00:00:00') & hpc$DateTime <= as.POSIXct('2007-02-02 23:59:00')]
 
 png(filename = "plot2.png")
-
 
 with(hpc, plot(DateTime, Global_active_power, type="l"))
     #axis(1,at=seq(from = weekdays(hpc$DateTime[1]),length.out = 3), labels=format (hpc$DateTime,"%a"))

@@ -2,9 +2,6 @@ library(data.table)
 library(lubridate)
 library(dplyr)
 
-#change directory to the data folder
-setwd("/media/NewVolume/Coursera/JHUDataScienceSpecialization/04_ExploratoryAnalysis/ExData_Plotting1/")
-
 #The following descriptions of the 9 variables in the dataset are taken from the UCI web site:
 #  
 # Date: Date in format dd/mm/yyyy
